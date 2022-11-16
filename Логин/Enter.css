@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap);
+body
+{
+background-color: #DB7093;
+font-family: Times New Roman, sans-serif;
+    text-align:  center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+form {
+  background: $white;
+  padding: 3em;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid $white;
+  border-top: 1px solid $white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  p {
+    font-weight: 500;
+    color: white: ;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+
+  a {
+    text-decoration: none;
+    color: #black;
+    font-size: 12px;
+
+    &:hover {
+      text-shadow: 2px 2px 6px #00000040;
+    }
+
+    &:active {
+      text-shadow: none;
+    }
+  }
+
+  input {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: 1px solid $white;
+    border-top: 1px solid $white;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px black;
+    color: #white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px BLACK;
+
+    input:hover {
+      background: black;
+      box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+    }
+
+    &[type="email"],
+    &[type="password"] {
+
+      &:focus {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+      }
+    }
